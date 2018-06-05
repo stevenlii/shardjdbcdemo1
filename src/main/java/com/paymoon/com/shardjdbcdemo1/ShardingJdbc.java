@@ -77,9 +77,9 @@ public class ShardingJdbc {
     private static DataSource createDataSource(String dataSourceName) {  
         BasicDataSource result = new BasicDataSource();  
         result.setDriverClassName(com.mysql.jdbc.Driver.class.getName());  
-        result.setUrl(String.format("jdbc:mysql://localhost:3306/%s", dataSourceName));  
-        result.setUsername("root");  
-        result.setPassword("");  
+        result.setUrl(String.format("jdbc:mysql://www.paymoon.com:3306/%s", dataSourceName));  
+        result.setUsername("monitor");  
+        result.setPassword("11111111");  
         return result;  
     }  
   
